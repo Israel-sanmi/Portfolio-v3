@@ -29,8 +29,8 @@ export default function Contact() {
       >
         <h1 className={`${russo.className} text-4xl uppercase`}>Hey there!</h1>
         <p className={`${satistfy.className} py-5 text-2xl`}>
-          I'm open to frontend development opportunities, kindly reach out to
-          me. <br /> I'm open to parttime, freelance or junior developer roles.{" "}
+          I am open to frontend development opportunities, kindly reach out to
+          me. <br /> I am open to parttime, freelance or junior developer roles.{" "}
           <br /> Hit me up!
         </p>
         <a href="mailto:ilesanmiisrael@outlook.com" target="_blank">

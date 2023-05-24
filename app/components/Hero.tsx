@@ -42,12 +42,12 @@ export const Hero = () => {
           />
         </h1>
         <p className={`${dance.className} md:block hidden text-lg pb-4`}>
-          Hi, I'm Israel, A Passionate frontend developer skilled in multiple
+          Hi, I am Israel, A Passionate frontend developer skilled in multiple
           frontend technologies, <br /> dedicated to creating engaging and
           responsive web applications that deliver exceptional user experiences.
         </p>
         <p className={`${dance.className} md:hidden block text-sm pb-4`}>
-          Hi, I'm Israel, A Passionate frontend developer skilled in multiple
+          Hi, I am Israel, A Passionate frontend developer skilled in multiple
           frontend technologies, dedicated to creating engaging and responsive
           web applications that deliver exceptional user experiences.
         </p>

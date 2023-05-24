@@ -18,7 +18,7 @@ export default function Another() {
           About Israel
         </h1>
         <p className={`${quest.className} text-lg`}>
-          Hey there! I'm Adetomokun Israel, a passionate frontend developer with
+          Hey there! I am Adetomokun Israel, a passionate frontend developer with
           a knack for creating immersive and user-friendly web experiences. I
           enjoy crafting beautiful interfaces that not only look great but also
           provide seamless interactions.
@@ -33,11 +33,11 @@ export default function Another() {
           intuitive, and visually appealing websites. I enjoy collaborating with
           designers and backend developers to turn concepts into reality. I pay
           great attention to detail, ensuring pixel-perfect implementation and
-          smooth user experiences across different devices and browsers. I'm
+          smooth user experiences across different devices and browsers. I am
           experienced in working with various frontend tools and libraries, such
           as CSS preprocessors (TailwindCss, Sass), Javascript (ReactJs, React
           Native), Typescript(NextTs), Framer Motion, GSAP, CMS(Firebase,
-          Sanity.io) , and version control systems (Git). I'm also comfortable
+          Sanity.io) , and version control systems (Git). I am also comfortable
           with integrating APIs, optimizing website performance, and ensuring
           web accessibility.
         </p>
