@@ -86,10 +86,10 @@ export default function Project() {
                         ))}
                       </span>
                       <span className="flex text-right w-full gap-2 absolute">
-                        <a href={data.github}>
+                        <a href={data.github} target="_blank">
                           <IoLogoGithub className="sm:text-2xl text-lg hover:text-pink-500 transition-colors ease-in-out cursor-pointer" />
                         </a>
-                        <a href={data.link}>
+                        <a href={data.link} target="_blank">
                           <AiOutlineLink className="sm:text-2xl text-lg hover:text-pink-500 transition-colors ease-in-out cursor-pointer" />
                         </a>
                       </span>
