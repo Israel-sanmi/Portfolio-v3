@@ -51,7 +51,7 @@ export default function Project() {
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ type: "spring" }}
                 key={data.id}
-                className={`relative overflow-scroll max-w-xl h-auto w-full cursor-pointer hover:scale-105 transition-all ease-in-out duration-100 border border-white rounded-md ${
+                className={`relative overflow-y-scroll overflow-x-hidden max-w-xl h-auto w-full cursor-pointer hover:scale-105 transition-all ease-in-out duration-100 border border-white rounded-md ${
                   hoveredProjectId === data.id ? "border-pink-500" : ""
                 }`}
                 onMouseEnter={() => handleMouseEnter(data.id)}
@@ -63,35 +63,39 @@ export default function Project() {
                   src={data.projectImage}
                   loading="lazy"
                 />
-                {hoveredProjectId === data.id && (
-                  <span className="absolute flex flex-col justify-between top-0 p-2 md:p-4 bg-slate-300/75 h-full text-black">
-                    <h1
-                      className={`${lobby.className} uppercase text-center font-bold text-sm md:text-xl sm:text-2xl`}
-                    >
-                      {data.projectName}
-                    </h1>
-                    <p className={`${cpnfy.className} md:text-sm text-xs leading-tight md:leading-normal`}>
-                      {data.projectDesc}
-                    </p>
-                    <span className="flex flex-wrap gap-1">
-                      {data.tools.map((tool) => (
-                        <ul className="" key={tool}>
-                          <li className="md:text-sm text-xs bg-white rounded-sm p-1 md:p-2 font-bold">
-                            {tool}
-                          </li>
-                        </ul>
-                      ))}
+                <div className="bg-slate-300/75">
+                  {hoveredProjectId === data.id && (
+                    <span className="absolute flex flex-col gap-4 top-0 p-2 w-full md:p-4 bg-slate-300/75 h-full text-black">
+                      <h1
+                        className={`${lobby.className} uppercase text-center font-bold text-sm md:text-xl sm:text-2xl`}
+                      >
+                        {data.projectName}
+                      </h1>
+                      <p
+                        className={`${cpnfy.className} md:text-sm text-xs leading-tight md:leading-normal`}
+                      >
+                        {data.projectDesc}
+                      </p>
+                      <span className="flex justify-center flex-wrap gap-1">
+                        {data.tools.map((tool) => (
+                          <ul className="" key={tool}>
+                            <li className="md:text-sm text-xs bg-white rounded-sm p-1 md:p-2 font-bold">
+                              {tool}
+                            </li>
+                          </ul>
+                        ))}
+                      </span>
+                      <span className="flex text-right w-full gap-2 absolute">
+                        <a href={data.github}>
+                          <IoLogoGithub className="sm:text-2xl text-lg hover:text-pink-500 transition-colors ease-in-out cursor-pointer" />
+                        </a>
+                        <a href={data.link}>
+                          <AiOutlineLink className="sm:text-2xl text-lg hover:text-pink-500 transition-colors ease-in-out cursor-pointer" />
+                        </a>
+                      </span>
                     </span>
-                    <span className="flex text-right w-full gap-2 absolute">
-                      <a href={data.github}>
-                        <IoLogoGithub className="sm:text-2xl text-lg hover:text-pink-500 transition-colors ease-in-out cursor-pointer" />
-                      </a>
-                      <a href={data.link}>
-                        <AiOutlineLink className="sm:text-2xl text-lg hover:text-pink-500 transition-colors ease-in-out cursor-pointer" />
-                      </a>
-                    </span>
-                  </span>
-                )}
+                  )}
+                </div>
               </motion.div>
             );
           })}

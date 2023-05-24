@@ -25,9 +25,16 @@
   /* z-index: 100; */
 }
 
-
 .parallax span {
   display: block;
   margin-right: 30px;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+*.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
