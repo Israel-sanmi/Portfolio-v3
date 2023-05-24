@@ -1,11 +1,11 @@
-import "./globals.css";
+// import './globals.css'
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
 
 export const metadata = {
-  title: "Adetomokun Israel | Home",
-  description: "Adetomokun's Portfolio",
+  title: "Adetomokun Israel | about",
+  description: "Important details about Israel",
 };
 
 export default function RootLayout({
@@ -14,11 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
-        
-        <div>{children}</div>
-      </body>
-    </html>
+    <div>
+      <div className={roboto.className}>{children}</div>
+    </div>
   );
 }
