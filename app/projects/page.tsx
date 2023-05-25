@@ -33,7 +33,7 @@ export default function Project() {
     setHoveredProjectId(null);
   };
   return (
-    <div className="px-10 py-5 text-white bg-black h-full">
+    <div className="md:px-10 px-5 py-2 md:py-5 text-white bg-black h-full">
       <Navbar />
       <h1 className={`${abril.className} text-xl md:text-3xl py-3 uppercase`}>
         Portfolio Projects

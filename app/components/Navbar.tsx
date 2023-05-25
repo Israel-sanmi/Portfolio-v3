@@ -37,9 +37,9 @@ const Navbar = () => {
         </span>
         <span
           onClick={handleOpenNav}
-          className="md:h-12 h-6 w-6 md:w-12  hover:bg-pink-500 transition-colors ease-in-out flex justify-center items-center rounded-full bg-white cursor-pointer"
+          className="md:h-12 h-8 w-8 md:w-12  hover:bg-pink-500 transition-colors ease-in-out flex justify-center items-center rounded-full bg-white cursor-pointer"
         >
-          <ImMenu className="md:text-2xl text-xs text-black hover:text-white" />
+          <ImMenu className="md:text-2xl text-lg text-black hover:text-white" />
         </span>
       </div>
       {navBar && (

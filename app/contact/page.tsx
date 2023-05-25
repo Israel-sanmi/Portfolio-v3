@@ -20,24 +20,31 @@ const abril = Righteous({ weight: "400", subsets: ["latin"] });
 
 export default function Contact() {
   return (
-    <div className="bg-black px-10 py-5 h-screen text-white">
+    <div className="bg-black px-5 md:px-10 py-2 md:py-5 h-screen text-white">
       <Navbar />
       <motion.div
         initial={{ y: 200, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         className="text-center py-10"
       >
-        <h1 className={`${russo.className} text-4xl uppercase`}>Hey there!</h1>
-        <p className={`${satistfy.className} py-5 text-2xl`}>
+        <h1 className={`${russo.className} md:text-4xl text-2xl uppercase`}>
+          Hey there!
+        </h1>
+        <p className={`${satistfy.className} py-5 md:block hidden text-2xl`}>
           I am open to frontend development opportunities, kindly reach out to
           me. <br /> I am open to parttime, freelance or junior developer roles.{" "}
+          <br /> Hit me up!
+        </p>
+        <p className={`${satistfy.className} md:hidden block py-5 text-xl`}>
+          I am open to frontend development opportunities, kindly reach out to
+          me. I am open to parttime, freelance or junior developer roles.
           <br /> Hit me up!
         </p>
         <a href="mailto:ilesanmiisrael@outlook.com" target="_blank">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className={`${abril.className} py-2 px-4 bg-white text-black text-xl my-5 cursor-pointer`}
+            className={`${abril.className} py-1 md:py-2 px-2 md:px-4 bg-white text-black text-lg md:text-xl my-5 cursor-pointer`}
           >
             Send an email
           </motion.button>
