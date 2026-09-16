@@ -1,20 +1,13 @@
-import { Roboto } from "next/font/google";
-
-const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
-
 export const metadata = {
-  title: "Adetomokun Israel | Contact",
-  description: "Adetomokun's Portfolio",
+  title: "Contact & Collaboration — Adetomokun Israel",
+  description:
+    "Get in touch with Adetomokun Israel for software engineering opportunities, product development, and contract inquiries.",
 };
 
-export default function RootLayout({
+export default function ContactLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <div className={roboto.className}>
-      <div>{children}</div>
-    </div>
-  );
+  return <>{children}</>;
 }

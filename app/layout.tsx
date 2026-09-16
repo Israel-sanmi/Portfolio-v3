@@ -1,11 +1,40 @@
 import "./globals.css";
-import { Roboto } from "next/font/google";
+import { Poppins, Space_Grotesk } from "next/font/google";
 
-const roboto = Roboto({ weight: ["300"], subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700", "800"],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
 
 export const metadata = {
-  title: "Adetomokun Israel | Home",
-  description: "Adetomokun's Portfolio",
+  title: "Adetomokun Israel — Software Engineer & Creator",
+  description:
+    "Portfolio of Adetomokun Israel — Software Engineer building digital products that matter. Creator of Dootling and Selfana.",
+  keywords: [
+    "Adetomokun Israel",
+    "Software Engineer",
+    "Frontend Developer",
+    "Portfolio",
+    "Dootling",
+    "Selfana",
+    "React",
+    "Next.js",
+  ],
+  authors: [{ name: "Adetomokun Israel" }],
+  openGraph: {
+    title: "Adetomokun Israel — Software Engineer & Creator",
+    description:
+      "Building digital products that matter. Creator of Dootling and Selfana.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -14,10 +43,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
-        
-        <div>{children}</div>
+    <html lang="en" className={`${poppins.variable} ${spaceGrotesk.variable}`}>
+      <body className="font-body antialiased bg-[#07070b] text-white">
+        <div className="grain-overlay" aria-hidden="true" />
+        <main>{children}</main>
       </body>
     </html>
   );
