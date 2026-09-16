@@ -141,12 +141,12 @@ export default function Home() {
                         }`}
                       >
                         {isDootling
-                          ? "Storefront Creator"
-                          : "Classifieds Marketplace"}
+                          ? "E-COMMERCE INFRASTRUCTURE"
+                          : "BUY & SELL MARKETPLACE"}
                       </span>
                       <span className="text-xs font-mono text-slate-500">
                         {isDootling
-                          ? "E-COMMERCE INFRASTRUCTURE"
+                          ? "STOREFRONT CREATOR"
                           : "BUY & SELL MARKETPLACE"}
                       </span>
                     </div>

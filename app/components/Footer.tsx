@@ -97,7 +97,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
-                className="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-violet/60 hover:scale-105 transition-all"
+                className="w-9 h-9 rounded-sm glass flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-violet/60 hover:scale-105 transition-all"
               >
                 <IoLogoGithub className="text-lg" />
               </a>
@@ -106,7 +106,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
-                className="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-cyan/60 hover:scale-105 transition-all"
+                className="w-9 h-9 rounded-sm glass flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-cyan/60 hover:scale-105 transition-all"
               >
                 <IoLogoLinkedin className="text-lg" />
               </a>
@@ -115,7 +115,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Twitter / X"
-                className="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-cyan/60 hover:scale-105 transition-all"
+                className="w-9 h-9 rounded-sm glass flex items-center justify-center text-slate-300 hover:text-white hover:border-accent-cyan/60 hover:scale-105 transition-all"
               >
                 <IoLogoTwitter className="text-lg" />
               </a>
@@ -124,14 +124,14 @@ export default function Footer() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label="WhatsApp"
-                className="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-500/60 hover:scale-105 transition-all"
+                className="w-9 h-9 rounded-sm glass flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-500/60 hover:scale-105 transition-all"
               >
                 <IoLogoWhatsapp className="text-lg" />
               </a>
               <a
                 href="mailto:ilesanmiisrael@outlook.com"
                 aria-label="Outlook Email"
-                className="w-9 h-9 rounded-lg glass flex items-center justify-center text-slate-300 hover:text-sky-400 hover:border-sky-500/60 hover:scale-105 transition-all"
+                className="w-9 h-9 rounded-sm glass flex items-center justify-center text-slate-300 hover:text-sky-400 hover:border-sky-500/60 hover:scale-105 transition-all"
               >
                 <SiMicrosoftoutlook className="text-lg" />
               </a>

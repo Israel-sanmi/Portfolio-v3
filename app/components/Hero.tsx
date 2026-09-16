@@ -243,9 +243,9 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-white/[0.08]"
+          className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-16 pt-10 border-t border-white/[0.08]"
         >
-          <div className="glass p-5 rounded-2xl border border-white/[0.06] hover:border-accent-violet/30 transition-all">
+          <div className="glass p-5 rounded-sm border border-white/[0.06] hover:border-accent-violet/30 transition-all">
             <div className="flex items-center gap-2 text-accent-cyan mb-1">
               <FiLayers className="text-lg" />
               <span className="font-heading font-extrabold text-2xl md:text-3xl text-white">
