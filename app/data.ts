@@ -58,8 +58,8 @@ export const projectData: ProjectItem[] = [
     projectDesc:
       "A vibrant online marketplace connecting buyers and sellers across every category — electronics, fashion, vehicles, real estate, and more. Featuring intelligent search, verified seller profiles, in-app messaging, and location-based discovery, Selfana makes it effortless to find great deals or reach thousands of potential customers.",
     github: "",
-    link: "https://selfana.com",
-    secondaryLink: "https://app.selfana.com",
+    link: "https://selfana.ng",
+    secondaryLink: "https://app.selfana.ng",
     secondaryLinkLabel: "Open Marketplace",
     tools: [
       "Next.js",
